@@ -1,0 +1,186 @@
+// font-family: 'Bungee Shade', cursive;
+// font-family: 'Caveat', cursive;
+// font-family: 'Codystar', cursive;
+// font-family: 'Sansation', cursive;
+
+.hero-section {
+    background-image: url('../images/Hero-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-section-text-wrapper {
+    height: 50%;
+    width: 100%;
+    @include center();
+    @include flex(center, space-around, column);
+
+    h2, h3 {
+        position: relative;
+        top: -15%;
+    }
+}
+
+#arrow {
+    @include position(25%, 50%);
+    opacity: 1;
+    animation: arrow 2s alternate ease-in-out infinite;
+}
+
+nav {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    height: 9.1rem;
+    width: 100%;
+    background-color: #15151577;
+    font-size: $header3;
+    text-align: center;
+    
+    @include border();
+    @include flex(center, space-around, row);
+}
+
+.venue-section {
+    position: relative;
+    background-color: $bg-lighter;
+    @include border();
+
+    @include flex(center, center, row);
+
+    .venue-card {
+        position: relative;
+        top: 0%;
+        left: 2%;
+        height: 75%;
+        width: 25%;
+        padding: 5rem;
+        text-align: center;
+        background-color: #222222;
+        border: 5px solid #000000;
+        box-shadow: -50px 50px 0px 1px rgba(0, 0, 0, 0.25);
+
+        @include flex (center, space-around, column);
+
+        h1 {
+            font-size: $header2;
+            line-height: 77px;
+        }
+
+        #address {
+            font-size: $header3;
+            color: #ffffff;
+        }
+
+        #info {
+            font-size: $text;
+            line-height: 165.2%;
+        }
+    }
+}
+
+.side-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #111111;
+    height: 100%;
+    width: 7%;
+    font-family: 'Codystar', cursive;
+    color: #ffffff;
+
+    border-right: 2px solid #000000;
+    
+    .side-nav-wrapper {
+        text-align: center;
+        @include center;
+    }
+}
+
+.info-section {
+    position: relative;
+    background-color: #111111;
+
+    @include flex(flex-end, center, column);
+
+    #info-nav {
+        background-color: $bg-lighter;
+    }
+
+    .info-card {
+        height: 25%;
+        width: 20%;
+        background-color: #222222;
+        border-left: 2px solid #000000;
+        border-bottom: 2px solid #000000;
+        cursor: pointer;
+
+        &:hover {
+            border-left: 2px solid $accent;
+        }
+        
+        h1 {
+            font-size: 4.5rem;
+            text-align: center;
+            line-height: $header2;
+            color: white;
+            @include center();
+        }
+
+        .info-active {
+            color: $accent;
+            // border-left: 2px solid $accent;
+        }
+    }
+
+    #bottom-info-card {
+        border-bottom: none;
+    }
+
+    .info-card-click-text {
+        font-size: $header2;
+        @include position(50%, 45%);
+        position: absolute;
+        opacity: 0;
+        transition: all 1s;
+    }
+
+    #menu-text h3{
+        font-size: $header2;
+    }
+
+    .info-card-click-active {
+        opacity: 1;
+    }
+
+    #socialText {
+        @include flex(center, space-around, column);
+        height: 25%;
+        
+
+        li{
+            @include flex(center, space-around, row);
+            width: 120%;
+            height: 100%
+        }
+    }
+}
+
+@keyframes arrow {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(50%);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+}
+
