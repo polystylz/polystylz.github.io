@@ -17,10 +17,10 @@
 }
 
 .hero-text-wrapper {
-    height: 50%;
+    height: 30%;
     // background-color: seagreen;
     text-align: center;
-    @include flex(center, center, column);
+    @include flex(center, space-around, column);
 
     #main-text {
         line-height: 50px;
