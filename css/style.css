@@ -74,15 +74,30 @@ ul {
 }
 
 .hero-text-wrapper {
+  height: 50%;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .hero-text-wrapper #main-text {
   line-height: 50px;
+  font-size: 3rem;
 }
 
 .hero-text-wrapper #slogan {
-  color: red;
+  color: blue;
   font-family: 'Caveat', cursive;
 }
 

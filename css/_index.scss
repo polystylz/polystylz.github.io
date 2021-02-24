@@ -17,14 +17,18 @@
 }
 
 .hero-text-wrapper {
+    height: 50%;
+    // background-color: seagreen;
     text-align: center;
+    @include flex(center, center, column);
 
     #main-text {
         line-height: 50px;
+        font-size: 3rem;
     }
     
     #slogan {
-        color: red;
+        color: blue;
         font-family: 'Caveat', cursive;
     }
 }
