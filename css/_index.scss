@@ -28,13 +28,14 @@
     }
     
     #slogan {
-        color: blue;
+        color: grey;
         font-family: 'Caveat', cursive;
     }
 }
 
 #arrow {
-    @include position(10%, 5%);
+    @include position(85%, 50%);
+    position: absolute;
     animation: arrow 2s ease-in-out alternate infinite;
 }
 

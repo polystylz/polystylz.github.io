@@ -96,16 +96,17 @@ ul {
 }
 
 .hero-text-wrapper #slogan {
-  color: blue;
+  color: grey;
   font-family: 'Caveat', cursive;
 }
 
 #arrow {
   position: relative;
-  top: 10%;
-  left: 5%;
+  top: 85%;
+  left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  position: absolute;
   -webkit-animation: arrow 2s ease-in-out alternate infinite;
           animation: arrow 2s ease-in-out alternate infinite;
 }
