@@ -17,19 +17,14 @@
 }
 
 .hero-text-wrapper {
-    height: 40%;
     text-align: center;
-    margin-bottom: 5rem;
-    padding: 0 1rem;
-    @include position(40%, 50%);
 
     #main-text {
         line-height: 50px;
-        margin-bottom: 1rem;
     }
     
     #slogan {
-        color: seagreen;
+        color: red;
         font-family: 'Caveat', cursive;
     }
 }

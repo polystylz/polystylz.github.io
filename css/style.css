@@ -74,24 +74,15 @@ ul {
 }
 
 .hero-text-wrapper {
-  height: 40%;
   text-align: center;
-  margin-bottom: 5rem;
-  padding: 0 1rem;
-  position: relative;
-  top: 40%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }
 
 .hero-text-wrapper #main-text {
   line-height: 50px;
-  margin-bottom: 1rem;
 }
 
 .hero-text-wrapper #slogan {
-  color: seagreen;
+  color: red;
   font-family: 'Caveat', cursive;
 }
 
