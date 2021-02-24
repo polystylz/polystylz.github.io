@@ -1,17 +1,17 @@
-let card_OpenHours  = document.getElementById('info-opening-hours');
-let card_EntryCost  = document.getElementById('info-entry-cost');
-let card_Menu       = document.getElementById('info-menu');
-let card_social     = document.getElementById('bottom-info-card');
+let card_OpenHours  = document.getElementById('opening-hours-card');
+let card_EntryCost  = document.getElementById('entry-cost-card');
+let card_Menu       = document.getElementById('menu-card');
+let card_social     = document.getElementById('social-card');
 
-let card_OpenHours_h1   = document.getElementById('info-opening-hours-h1');
-let card_EntryCost_h1   = document.getElementById('info-entry-cost-h1');
-let card_Menu_h1        = document.getElementById('info-menu-h1');
-let card_social_h1      = document.getElementById('info-social-h1');
+let card_OpenHours_h1   = document.getElementById('opening-hours-h1');
+let card_EntryCost_h1   = document.getElementById('entry-cost-h1');
+let card_Menu_h1        = document.getElementById('menu-h1');
+let card_social_h1      = document.getElementById('social-h1');
 
 let openHours_text  = document.getElementById('opening-hours-text');
 let entryCost_text  = document.getElementById('entry-cost-text');
 let menu_text       = document.getElementById('menu-text');
-let social_text     = document.getElementById('socialText');
+let social_text     = document.getElementById('social-text');
 
 card_OpenHours.addEventListener('click', () => {
     infoChange(1);

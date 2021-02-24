@@ -3,184 +3,152 @@
 // font-family: 'Codystar', cursive;
 // font-family: 'Sansation', cursive;
 
-.hero-section {
+#hero-section {
     background-image: url('../images/Hero-img.png');
-    background-repeat: no-repeat;
+    background-position: bottom;
     background-size: cover;
-    background-position: center;
+    // @include center();
+    @include flex(center, center, column);
+
+    nav {
+        position: absolute;
+        display: none;
+    }
 }
 
-.hero-section-text-wrapper {
-    height: 50%;
-    width: 100%;
-    @include center();
-    @include flex(center, space-around, column);
+.hero-text-wrapper {
+    height: 40%;
+    text-align: center;
+    margin-bottom: 5rem;
+    padding: 0 1rem;
+    @include position(40%, 50%);
 
-    h2, h3 {
-        position: relative;
-        top: -15%;
+    #main-text {
+        line-height: 50px;
+        margin-bottom: 1rem;
+    }
+    
+    #slogan {
+        font-family: 'Caveat', cursive;
     }
 }
 
 #arrow {
-    @include position(25%, 50%);
-    opacity: 1;
-    animation: arrow 2s alternate ease-in-out infinite;
+    @include position(10%, 5%);
+    animation: arrow 2s ease-in-out alternate infinite;
 }
 
-nav {
-    position: absolute;
-    bottom: 0%;
-    left: 0%;
-    height: 9.1rem;
-    width: 100%;
-    background-color: #15151577;
-    font-size: $header3;
+#venue-section {
+    background-color: $bg_light;
+    background-color: #151515;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='%23222222' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M5 3.59L1.46.05.05 1.46 3.59 5 .05 8.54l1.41 1.41L5 6.41l3.54 3.54 1.41-1.41L6.41 5l3.54-3.54L8.54.05 5 3.59zM17 2h24v2H17V2zm0 4h24v2H17V6zM2 17h2v24H2V17zm4 0h2v24H6V17z'/%3E%3C/g%3E%3C/svg%3E");
     text-align: center;
-    
-    @include border();
-    @include flex(center, space-around, row);
-}
+    @include flex(center, center, column);
 
-.venue-section {
-    position: relative;
-    background-color: $bg-lighter;
-    @include border();
-
-    @include flex(center, center, row);
-
-    .venue-card {
-        position: relative;
-        top: 0%;
-        left: 2%;
-        height: 75%;
-        width: 25%;
-        padding: 5rem;
-        text-align: center;
-        background-color: #222222;
-        border: 5px solid #000000;
-        box-shadow: -50px 50px 0px 1px rgba(0, 0, 0, 0.25);
-
-        @include flex (center, space-around, column);
-
-        h1 {
-            font-size: $header2;
-            line-height: 77px;
-        }
-
-        #address {
-            font-size: $header3;
-            color: #ffffff;
-        }
-
-        #info {
-            font-size: $text;
-            line-height: 165.2%;
-        }
+    #venue-img {
+        display: none;
     }
 }
 
-.side-nav {
+.venue-text-wrapper {
+    height: 80%;
+    width: 80%;
+    padding: 1rem;
+    background-color: $bg_lightest;
+    border-radius: 10px;
+    box-shadow: -10px 20px 0px 0px #77777777;
+    @include flex(center, space-around, column);
+
+    #address {
+        font-family: 'Sansation', cursive;
+        color: white;
+    }
+}
+
+.navbar {
     position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #111111;
-    height: 100%;
-    width: 7%;
-    font-family: 'Codystar', cursive;
-    color: #ffffff;
-
-    border-right: 2px solid #000000;
-    
-    .side-nav-wrapper {
-        text-align: center;
-        @include center;
-    }
+    display: none;
 }
 
-.info-section {
+#info-section {
     position: relative;
-    background-color: #111111;
+    background-color: $bg_dark;
+    border-top: 2px solid #000000;
+    text-align: center;
+    line-height: 50px;
 
+    
+}
+
+.info-card-wrapper {
+    height: 100%;
     @include flex(flex-end, center, column);
+}
 
-    #info-nav {
-        background-color: $bg-lighter;
-    }
+.info-card {
+    height: 25%;
+    width: 33%;
+    background-color: $bg_light;
+    border: 1px solid #000000;
 
-    .info-card {
-        height: 25%;
-        width: 20%;
-        background-color: #222222;
-        border-left: 2px solid #000000;
-        border-bottom: 2px solid #000000;
-        cursor: pointer;
-
-        &:hover {
-            border-left: 2px solid $accent;
-        }
-        
-        h1 {
-            font-size: 4.5rem;
-            text-align: center;
-            line-height: $header2;
-            color: white;
-            @include center();
-        }
-
-        .info-active {
-            color: $accent;
-            // border-left: 2px solid $accent;
-        }
-    }
-
-    #bottom-info-card {
-        border-bottom: none;
-    }
-
-    .info-card-click-text {
-        font-size: $header2;
-        @include position(50%, 45%);
-        position: absolute;
-        opacity: 0;
-        transition: all 1s;
-    }
-
-    #menu-text h3{
-        font-size: $header2;
-    }
-
-    .info-card-click-active {
-        opacity: 1;
-    }
-
-    #socialText {
-        @include flex(center, space-around, column);
-        height: 25%;
-        
-
-        li{
-            @include flex(center, space-around, row);
-            width: 120%;
-            height: 100%
-        }
+    h1 {
+        font-size: $text;
+        line-height: 25px;
+        padding: 0 0.1rem;
+        color: white;
+        @include center();
     }
 }
+
+.faq-text {
+    @include position(50%, 35%);
+    position: absolute;
+    color: $accent;
+    font-family: 'Caveat', cursive;
+    opacity: 0;
+    // height: 100%;
+    transition: all 1s;
+}
+
+.info-card-click-active {
+    opacity: 1;
+}
+
+.info-active {
+    border-left: 1px solid $accent;
+}
+
+#social-text {
+    height: 50%;
+    @include flex(center, space-around, column);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @keyframes arrow {
-    0% {
-        opacity: 0;
-        transform: translateY(0);
-    }
-
-    50% {
-        opacity: 1;
-        transform: translateY(50%);
-    }
-
-    100% {
-        opacity: 0;
-        transform: translateY(0);
-    }
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
 }
-

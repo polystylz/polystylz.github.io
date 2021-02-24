@@ -10,7 +10,7 @@
 }
 
 html, body {
-    font-size: 62.5%;
+    // font-size: 62.5%;
     scroll-behavior: smooth;
 }
 
@@ -19,59 +19,33 @@ section {
     width: 100%;
 }
 
-h1, h2, h3, h4 {
-    color: #EF0ACC;
-    font-family: 'Bungee Shade';
+h1, h2 {
+    color: $accent;
+    font-family: 'Bungee Shade', cursive;
+    font-weight: 100;
 }
 
-h1 { 
+h1 {
     font-size: $header1;
 }
 
-h2 { 
+h2 {
     font-size: $header2;
-    opacity: 75%;
-}
-
-h3 { 
-    font-size: $header3;
-    opacity: 75%;
-    font-family: 'Caveat', cursive;
-}
-
-h4 { 
-    font-size: $header4;
-}
-
-h5 {
-    font-size: $header1;
 }
 
 p {
-    color: $text-color;
-    font-family: "Sansation", sans-serif;
+    font-size: $text;
+    color: #cccccc;
+    font-family: 'Sansation', cursive;
 }
 
 a {
     text-decoration: none;
+    color: $accent;
     font-family: 'Codystar', cursive;
-    color: #ffffff;
-
-    &:hover {
-        color: $accent;
-    }
 }
 
 ul {
     list-style: none;
-}
-
-li {
-    font-size: 3rem;
-    font-family: "Roboto", sans-serif;
-}
-
-.active {
-    color: $accent;
 }
 

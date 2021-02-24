@@ -1,12 +1,12 @@
-$header1: 9.6rem;
-$header2: 6.4rem;
-$header3: 3.4rem;
-$header4: 1rem;
-$text: 2.4rem;
-$text-color:#c5c5c5;
-$bg-darker: #000000;
-$bg-lighter:#151515;
-$accent:    #EF0ACC;
+$header1: 2.25rem;
+$header2: 1.5rem;
+$text: 1rem;
+
+
+$bg_dark: #111111;
+$bg_light: #151515;
+$bg-lightest: #222222;
+$accent: #EF0ACC;
 
 @mixin flex($align, $justify, $direction) {
     display: flex;
@@ -29,312 +29,30 @@ $accent:    #EF0ACC;
     transform: translate(-50%, -50%);
 }
 
-@mixin border() {
-    border: 2px solid #000000;
-}
-
 @import "global";
 @import "index";
 
-@media only screen and (max-width: 576px) { 
-    html, body {
-        font-size: 30%;
-        text-align: center;
-    }
+// Extra small devices (portrait phones, less than 576px)
+// @media (min-width: 320px) { 
 
-    nav, .side-nav, .venue-img {
-        display: none;
-    }
+// }
 
-    .hero-section-text-wrapper {
-        height: 50%;
-        width: 100%;
-        @include center();
-        @include flex(center, space-around, column);
-    
-        h1 {
-            line-height: 100%;
-            margin-bottom: 2rem;
-        }
+// Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) { 
 
-        h2 {
-            font-size: 5rem;
-        }
-
-        h2, h3 {
-            position: relative;
-            top: -15%;
-            padding: 0 2rem;
-        }
-    }
-
-    #arrow {
-        @include position(20%, 0%);
-    }
-
-    .venue-section {
-        background-image: url('../images/Venue-img.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-
-        .venue-card {
-            width: 80%;
-            left: 0%;
-
-            h1 {
-                line-height: 40px;
-            }
-        }
-    }
-
-    .info-section {
-        
-        .info-card {
-            width: 33%;
-
-            h1 {
-                font-size: 3.5rem;
-            }
-        }
-
-        .info-card-click-text {
-            width: 50%;
-            @include position(50%, 35%);
-            position: absolute;
-        }
-
-        #socialText {
-            @include flex(center, space-around, column);
-            height: 60%;
-            
-    
-            li{
-                @include flex(center, space-around, column);
-                width: 120%;
-                height: 100%
-            }
-        }
-    }
-}
+// }
 
 // Medium devices (tablets, 768px and up)
-@media only screen and (max-width: 768px) { 
-    html, body {
-        font-size: 60%;
-        text-align: center;
-    }
+// @media (min-width: 768px) { 
 
-    nav, .side-nav, .venue-img {
-        display: none;
-    }
-
-    .hero-section-text-wrapper {
-        height: 50%;
-        width: 100%;
-        @include center();
-        @include flex(center, space-around, column);
-    
-        h1 {
-            line-height: 100%;
-            margin-bottom: 4rem;
-        }
-
-        h2 {
-            font-size: 5rem;
-        }
-
-        h2, h3 {
-            position: relative;
-            top: -15%;
-            padding: 0 2rem;
-        }
-    }
-
-    #arrow {
-        @include position(20%, 0%);
-    }
-
-    .venue-section {
-        background-image: url('../images/Venue-img.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-
-        .venue-card {
-            width: 80%;
-            left: 0%;
-
-            h1 {
-                line-height: 60px;
-            }
-        }
-    }
-
-    .info-section {
-        
-        .info-card {
-            width: 33%;
-
-            h1 {
-                font-size: 3.5rem;
-            }
-        }
-
-        .info-card-click-text {
-            width: 50%;
-            @include position(50%, 35%);
-            position: absolute;
-        }
-
-        #socialText {
-            @include flex(center, space-around, column);
-            height: 60%;
-            
-    
-            li{
-                @include flex(center, space-around, column);
-                width: 120%;
-                height: 100%
-            }
-        }
-    }
-}
+// }
 
 // Large devices (desktops, 992px and up)
-@media only screen and (max-width: 992px) { 
-    html, body {
-        font-size: 60%;
-        text-align: center;
-    }
+// @media (min-width: 992px) { 
 
-    nav, .side-nav, .venue-img {
-        display: none;
-    }
-
-    .hero-section-text-wrapper {
-        height: 50%;
-        width: 100%;
-        @include center();
-        @include flex(center, space-around, column);
-    
-        h1 {
-            line-height: 100%;
-            margin-bottom: 4rem;
-        }
-
-        h2 {
-            font-size: 5rem;
-        }
-
-        h2, h3 {
-            position: relative;
-            top: -15%;
-            padding: 0 2rem;
-        }
-    }
-
-    #arrow {
-        @include position(20%, 0%);
-    }
-
-    .venue-section {
-        background-image: url('../images/Venue-img.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-
-        .venue-card {
-            width: 80%;
-            left: 0%;
-
-            h1 {
-                line-height: 60px;
-            }
-        }
-    }
-
-    .info-section {
-        
-        .info-card {
-            width: 33%;
-
-            h1 {
-                font-size: 3.5rem;
-            }
-        }
-
-        .info-card-click-text {
-            width: 50%;
-            @include position(50%, 35%);
-            position: absolute;
-        }
-
-        #socialText {
-            @include flex(center, space-around, column);
-            height: 60%;
-            
-    
-            li{
-                @include flex(center, space-around, column);
-                width: 120%;
-                height: 100%
-            }
-        }
-    }
-}
+// }
 
 // Extra large devices (large desktops, 1200px and up)
-@media only screen and (max-width: 1200px) { 
+// @media (min-width: 1200px) { 
 
-    .venue-se ction {
-    position: relative;
-    background-color: $bg-lighter;
-    @include border();
-
-    @include flex(center, center, row);
-
-        .venue-card {
-            height: 80%;
-            width: 50%;
-            z-index: 1;
-
-            h1 {
-                font-size: $header3;
-                line-height: 50px;
-            }
-
-            #address {
-                font-size: $header3;
-                color: #ffffff;
-            }
-
-            #info {
-                font-size: $text;
-                line-height: 165.2%;
-            }
-        }
-
-        img {
-            height: 75%;
-            width: 75%;
-        }
-
-        .venue-card, img {
-            position: relative;
-            left: 20%;
-        }
-    }
-
-    .side-nav {
-        width: 10%;
-    }
-
-    .info-section {
-        .info-card {
-            h1 {
-                font-size: 3rem;
-            }
-        }
-    }
-}
+// }
