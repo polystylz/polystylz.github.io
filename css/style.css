@@ -158,6 +158,10 @@ ul {
           flex-direction: column;
 }
 
+.venue-text-wrapper #comeVisit {
+  line-height: 50px;
+}
+
 .venue-text-wrapper #address {
   font-family: 'Sansation', cursive;
   color: white;
