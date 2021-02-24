@@ -255,6 +255,12 @@ ul {
           flex-direction: column;
 }
 
+@media (min-height: 700px) {
+  .venue-text-wrapper {
+    min-height: 50%;
+  }
+}
+
 @-webkit-keyframes arrow {
   0% {
     opacity: 0;
