@@ -160,7 +160,7 @@ ul {
 
 .venue-text-wrapper #address {
   font-family: 'Sansation', cursive;
-  color: white;
+  color: red;
 }
 
 .navbar {
@@ -213,14 +213,15 @@ ul {
 }
 
 .faq-text {
+  width: 50%;
   position: relative;
   top: 50%;
   left: 35%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   position: absolute;
-  color: #EF0ACC;
-  font-family: 'Caveat', cursive;
+  color: whitesmoke;
+  font-family: 'Codystar', cursive;
   opacity: 0;
   -webkit-transition: all 1s;
   transition: all 1s;

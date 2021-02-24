@@ -63,7 +63,7 @@
 
     #address {
         font-family: 'Sansation', cursive;
-        color: white;
+        color: red;
     }
 }
 
@@ -103,12 +103,13 @@
 }
 
 .faq-text {
+    width: 50%;
+    // background-color: seagreen;
     @include position(50%, 35%);
     position: absolute;
-    color: $accent;
-    font-family: 'Caveat', cursive;
+    color: whitesmoke;
+    font-family: 'Codystar', cursive;
     opacity: 0;
-    // height: 100%;
     transition: all 1s;
 }
 
