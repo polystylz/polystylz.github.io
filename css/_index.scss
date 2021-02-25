@@ -142,6 +142,11 @@
 // Medium devices (tablets, 768px and up)
 @media (min-width: 1024px) { 
 
+    .info-card h1{
+        font-size: $text-computer;
+        line-height: 50px;
+    }
+
     #hero-section {
         
         nav {
@@ -187,14 +192,15 @@
 
 
     #venueSection {
+        height: 80vh;
         position: relative;
         background: #151515;
         @include flex(center, center, row);
         
         #venue-img {
             display: inline;
-            height: 70%;
-            width: 45%;
+            height: 80%;
+            width: 50%;
         }
 
         .venue-text-wrapper {
@@ -232,26 +238,89 @@
 // MDPI Screen
 @media (min-width: 1280px) { 
 
+    #venueSection {
+        
+        #venue-img {
+            height: 80%;
+            width: 30%;
+        }
+
+        .venue-text-wrapper {
+            height: 75%;
+            width: 25%;
+        }
+    }
 }
 
+@media (min-width: 1920px) { 
 
+    #hero-section {
+        background-position: center;
+    }
 
+    
+    #venueSection {
+        
+        #venue-img {
+            height: 80%;
+            width: 25%;
+        }
 
+        .venue-text-wrapper {
+            height: 75%;
+            width: 17.5%;
+        }
+    }
+}
 
+@media (min-width: 2560px) {
 
+    .hero-text-wrapper {
+        #main-text {
+            font-size: $header1-computer;
+        }
 
+        h2 {
+            font-size: $header2-computer;
+        }
+    }
 
+    #hero-section {
 
+        nav {
+            height: 10vh;
 
+            a {
+                font-size: $header3-computer;
+            }
+        }
+    }
+    
+    
+    #venueSection {
+        
+        #venue-img {
+            height: 80%;
+            width: 25%;
+        }
 
+        .venue-text-wrapper {
 
+            #comeVisit {
+                font-size: $header2-computer;
+                line-height: 77px;
+            }
 
+            #address {
+                font-size: $text-computer;
+            }
 
-
-
-
-
-
+            p {
+                font-size: 1.75rem;
+            }
+        }
+    }
+}
 
 @keyframes arrow {
     0% { opacity: 0; }

@@ -263,6 +263,10 @@ ul {
 }
 
 @media (min-width: 1024px) {
+  .info-card h1 {
+    font-size: 2.125rem;
+    line-height: 50px;
+  }
   #hero-section nav {
     position: absolute;
     bottom: 0;
@@ -318,6 +322,7 @@ ul {
     background-color: #111111;
   }
   #venueSection {
+    height: 80vh;
     position: relative;
     background: #151515;
     display: -webkit-box;
@@ -336,8 +341,8 @@ ul {
   }
   #venueSection #venue-img {
     display: inline;
-    height: 70%;
-    width: 45%;
+    height: 80%;
+    width: 50%;
   }
   #venueSection .venue-text-wrapper {
     position: relative;
@@ -362,6 +367,60 @@ ul {
   }
   #infoSection .info-card:hover .info-card h1 {
     color: black;
+  }
+}
+
+@media (min-width: 1280px) {
+  #venueSection #venue-img {
+    height: 80%;
+    width: 30%;
+  }
+  #venueSection .venue-text-wrapper {
+    height: 75%;
+    width: 25%;
+  }
+}
+
+@media (min-width: 1920px) {
+  #hero-section {
+    background-position: center;
+  }
+  #venueSection #venue-img {
+    height: 80%;
+    width: 25%;
+  }
+  #venueSection .venue-text-wrapper {
+    height: 75%;
+    width: 17.5%;
+  }
+}
+
+@media (min-width: 2560px) {
+  .hero-text-wrapper #main-text {
+    font-size: 6rem;
+  }
+  .hero-text-wrapper h2 {
+    font-size: 4rem;
+  }
+  #hero-section nav {
+    height: 10vh;
+  }
+  #hero-section nav a {
+    font-size: 3rem;
+  }
+  #venueSection #venue-img {
+    height: 80%;
+    width: 25%;
+  }
+  #venueSection .venue-text-wrapper #comeVisit {
+    font-size: 4rem;
+    line-height: 77px;
+  }
+  #venueSection .venue-text-wrapper #address {
+    font-size: 2.125rem;
+  }
+  #venueSection .venue-text-wrapper p {
+    font-size: 1.75rem;
   }
 }
 
