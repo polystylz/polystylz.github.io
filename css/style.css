@@ -111,7 +111,7 @@ ul {
           animation: arrow 2s ease-in-out alternate infinite;
 }
 
-#venue-section {
+#venueSection {
   min-height: 70vh;
   background-color: #151515;
   background-color: #151515;
@@ -132,7 +132,7 @@ ul {
           flex-direction: column;
 }
 
-#venue-section #venue-img {
+#venueSection #venue-img {
   display: none;
 }
 
@@ -172,7 +172,7 @@ ul {
   display: none;
 }
 
-#info-section {
+#infoSection {
   position: relative;
   background-color: #111111;
   border-top: 2px solid #000000;
@@ -201,7 +201,8 @@ ul {
   height: 25%;
   width: 33%;
   background-color: #151515;
-  border: 1px solid #000000;
+  border-left: 1px solid #000000;
+  border-bottom: 1px solid #000000;
 }
 
 .info-card h1 {
@@ -258,6 +259,109 @@ ul {
 @media (min-height: 700px) {
   .venue-text-wrapper {
     min-height: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #hero-section nav {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    height: 8%;
+    width: 100%;
+    background-color: #13131377;
+    border: 1px solid #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #hero-section nav h3 {
+    font-family: 'Codystar', cursive;
+    color: white;
+  }
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 100%;
+    width: 10%;
+    border-right: 1px solid #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar h1 {
+    font-family: 'Codystar', cursive;
+    padding: 1rem 0rem;
+  }
+  #venue-navbar {
+    background-color: #111111;
+  }
+  #venueSection {
+    position: relative;
+    background: #151515;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #venueSection #venue-img {
+    display: inline;
+    height: 70%;
+    width: 45%;
+  }
+  #venueSection .venue-text-wrapper {
+    position: relative;
+    top: 0;
+    left: 3%;
+    width: 30%;
+    border-radius: 0%;
+    border: 3px solid #000000;
+    -webkit-box-shadow: -10px 20px 0px 0px #22222277;
+            box-shadow: -10px 20px 0px 0px #22222277;
+  }
+  #infoSection #info-navbar {
+    background-color: #151515;
+  }
+  #infoSection .info-card {
+    cursor: pointer;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  #infoSection .info-card:hover {
+    background-color: #EF0ACC;
+  }
+  #infoSection .info-card:hover .info-card h1 {
+    color: black;
   }
 }
 

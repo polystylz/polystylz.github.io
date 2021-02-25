@@ -39,7 +39,7 @@
     animation: arrow 2s ease-in-out alternate infinite;
 }
 
-#venue-section {
+#venueSection {
     min-height: 70vh;
     background-color: $bg_light;
     background-color: #151515;
@@ -76,7 +76,7 @@
     display: none;
 }
 
-#info-section {
+#infoSection {
     position: relative;
     background-color: $bg_dark;
     border-top: 2px solid #000000;
@@ -93,7 +93,8 @@
     height: 25%;
     width: 33%;
     background-color: $bg_light;
-    border: 1px solid #000000;
+    border-left: 1px solid #000000;
+    border-bottom: 1px solid #000000;
 
     h1 {
         font-size: $text;
@@ -130,7 +131,8 @@
 
 // For Vertically Longer Screens
 
-@media (min-height: 700px) { 
+@media (min-height: 700px) {
+
     .venue-text-wrapper {
         min-height: 50%;
     }
@@ -138,9 +140,99 @@
 
 
 // Medium devices (tablets, 768px and up)
-// @media (min-width: 768px) { 
+@media (min-width: 1024px) { 
 
-// }
+    #hero-section {
+        
+        nav {
+            position: absolute;
+            bottom: 0;
+            display: block;
+            height: 8%;
+            width: 100%;
+            background-color: #13131377;
+            border: 1px solid #000000;
+
+            @include flex(center, space-around, row);
+
+            h3 {
+                font-family: 'Codystar', cursive;
+                color: white;
+            }
+        }
+    }
+
+    .navbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        height: 100%;
+        width: 10%;
+        border-right: 1px solid #000000;
+        // background-color: seagreen;
+        // @include center();
+        @include flex(center, center, column);
+        
+        h1 {
+            font-family: 'Codystar', cursive;
+            padding: 1rem 0rem;
+        }
+    }
+
+    #venue-navbar {
+        background-color: #111111;
+    }
+
+
+
+    #venueSection {
+        position: relative;
+        background: #151515;
+        @include flex(center, center, row);
+        
+        #venue-img {
+            display: inline;
+            height: 70%;
+            width: 45%;
+        }
+
+        .venue-text-wrapper {
+            position: relative;
+            top: 0;
+            left: 3%;
+            width: 30%;
+            border-radius: 0%;
+            border: 3px solid #000000;
+            box-shadow: -10px 20px 0px 0px #22222277;
+        }
+    }
+
+    #infoSection {
+        
+        #info-navbar {
+            background-color: $bg_light;
+        }
+
+        .info-card {
+            cursor: pointer;
+            transition: all 1s;
+
+            &:hover {
+                background-color: $accent;
+
+                .info-card h1 {
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+// MDPI Screen
+@media (min-width: 1280px) { 
+
+}
 
 
 
